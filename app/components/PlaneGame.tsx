@@ -30,7 +30,7 @@ export default function PlaneGame() {
   const [gameOver, setGameOver] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | undefined>(undefined);
   const bulletIdRef = useRef(0);
   const enemyIdRef = useRef(0);
   const lastShotRef = useRef(0);
